@@ -17,6 +17,7 @@ tittle{
 	width:400px;
 	height:800px;
 	margin-left:600px;
+	margin-right:100px;
 }
 
 
@@ -27,3 +28,8 @@ p {
 	font-size:12px;
 
  }
+#menu{
+	float:right;
+	margin-top:200px;
+	
+}
