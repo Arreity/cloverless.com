@@ -1,19 +1,60 @@
 body {
-	background-color:#232222;
+	background-color: #232222;
 }
 #outermenu {
-	background-color:white;
+	background-color: white;
 
-	width:450px;
-	height:450px;
-	padding:20px;
+	width: 450px; 
+	height: 450px;
+	padding: 20px;
 
-	position: absolute;
-	top:50%;
-	left:50%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
 
-	margin:-225px;
+	margin: -225px;
 
 	transform: rotate(45deg);
 	
+}
+
+#BIO {
+	background-image: url(Assets/BIO.png);
+	background-color: #bdffff;
+	width: 212px;
+	height: 212px;
+}
+
+#INFO
+{
+	background-image: url(Assets/INFO.png);
+	background-color: #b54d69;
+	width:212px;
+	height:212px;
+	float:left;
+	margin-top: 23px;
+}
+
+#WORK{
+	background-image: url(Assets/WORK.png);
+	background-color: #533b5b;
+	width:212px;
+	height:212px;
+	position: absolute;
+	left: 253px;
+	bottom:256px;
+
+}
+
+#SKILLS{
+	background-image: url(Assets/SKILLS.png);
+	background-color: #485479;
+	width:212px;
+	height:212px;
+	position: absolute;
+	left: 253px;
+	bottom: 25px;
+
+
+
 }
