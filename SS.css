@@ -1,0 +1,19 @@
+body {
+	background-color:#232222;
+}
+#outermenu {
+	background-color:white;
+
+	width:450px;
+	height:450px;
+	padding:20px;
+
+	position: absolute;
+	top:50%;
+	left:50%;
+
+	margin:-225px;
+
+	transform: rotate(45deg);
+	
+}
