@@ -4,24 +4,33 @@
 		<link rel="stylesheet" type="text/css" href="SS.css"></link>
 	</head>
 	<body>
-			<script type="text/javascript">
-    			function changec() {
-        			var currentheight = document.getElementById('BIO').clientHeight;
-        			console.log (currentheight)
-        			if (currentheight == 212)
-            		document.getElementById('BIO').style.height = "450px";
-        			else if (currentheight == 450)
-            		document.getElementById('BIO').style.height = "212px";
-            }
-			</script>
-		<div id="outermenu">
-		<div id="BIO" onclick="changec()">
-		</div>
-		<div id="INFO"></div>
-		<div id="SKILLS"></div>
-		<div id="WORK"></div>
-			
-		</div>
 		
+		<div id="outermenu">
+			<div id="BIO">
+			</div>
+			<div id="INFO"></div>
+			<div id="SKILLS"></div>
+			<div id="WORK"></div>
+		</div>
+		<script type="text/javascript">
+			function resizeBox(elementID) {
+				console.log(elementID);
+				element = document.getElementById(elementID);
+				console.log(element.clientHeight);
+				if(element.clientHeight == 212) {
+					element.style.height = '450px';
+					element.style.width = '450px';
+				}
+				else if(element.clientHeight == 450) {
+					element.style.height = '212px';
+					element.style.width = '212px';
+				}
+		}
+
+		document.getElementById('BIO').addEventListener('click', function() {resizeBox('BIO');});
+		document.getElementById('INFO').addEventListener('click', function() {resizeBox('INFO');});
+		document.getElementById('SKILLS').addEventListener('click', function() {resizeBox('SKILLS');});
+		document.getElementById('WORK').addEventListener('click', function() {resizeBox('WORK');});
+		</script>
 	</body>
 </html>
